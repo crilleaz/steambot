@@ -13,7 +13,7 @@ var fs = require('fs')
 // log in creds
 client.logOn({
   'accountName': 'jmlattanzi',
-  'password': '1031468aA'
+  'password': ''
 })
 
 // login was successful
@@ -23,7 +23,7 @@ client.on('loggedOn', function(){
 })
 
 client.on('steamGuard', function(domain, callback){
-  // to do
+  // to do... maybe? still promped for steam guard without having this method do anything
 })
 
 // throw error if invalid login
@@ -46,7 +46,7 @@ client.on('friendMessage', function(steamID, message){
 var replies = [
   'kek', 'topkek', 'nice meme', 'yee', 'im not sure how i feel about that', 'no',
   'i really cant believe how tall giraffes are', 'i want you to hit me as hard as you can',
-  'im not sure how i feel about car jackers', 'mage ameriga gread agen xDDD',
+  'im not sure how i feel about car jackers',
   'lol ok', 'ikr', 'fugg', 'damn son, whered ya find this'
 ]
 
