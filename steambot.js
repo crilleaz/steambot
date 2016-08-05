@@ -23,7 +23,7 @@ client.on('loggedOn', function(){
 })
 
 client.on('steamGuard', function(domain, callback){
-  // to do... maybe? still promped for steam guard without having this method do anything
+  // to do... maybe?
 })
 
 // throw error if invalid login
@@ -50,6 +50,7 @@ var replies = [
   'lol ok', 'ikr', 'fugg', 'damn son, whered ya find this'
 ]
 
+// main reply function
 function reply(steamID,  message){
   var reply_msg = replies[Math.floor(Math.random() * replies.length)]
   client.chatMessage(steamID, reply_msg)
